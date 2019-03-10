@@ -9,6 +9,14 @@
 #import "BLECrypto.h"
 #import <sodium.h>
 
+int crypto_sign_detached(unsigned char *sig, unsigned long long *siglen_p,
+                         const unsigned char *m, unsigned long long mlen,
+                         const unsigned char *sk);
+int crypto_sign_verify_detached(const unsigned char *sig,
+                                const unsigned char *m,
+                                unsigned long long mlen,
+                                const unsigned char *pk);
+
 const NSUInteger kBLECryptoEd25519PublicKeyLength = crypto_sign_ed25519_PUBLICKEYBYTES; // 32 bytes
 const NSUInteger kBLECryptoEd25519PrivateKeyLength = crypto_sign_ed25519_SECRETKEYBYTES; // 64 bytes
 const NSUInteger kBLECryptoEd25519SignatureLength = crypto_sign_ed25519_BYTES; // 64 bytes
@@ -72,9 +80,12 @@ const NSUInteger kBLECryptoCurve25519KeyLength = crypto_scalarmult_curve25519_BY
     
     size_t signatureBytesLength = sizeof(uint8_t) * kBLECryptoEd25519SignatureLength;
     uint8_t *signatureBytes = malloc(signatureBytesLength);
-    crypto_sign_detached(signatureBytes, NULL, data.bytes, data.length, privateKey.bytes);
+    /*
+    crypto_sign_detached((unsigned char*)signatureBytes, NULL, (const unsigned char *)data.bytes, (unsigned long long)data.length, (const unsigned char *)privateKey.bytes);
+    
     NSData *signatureData = [NSData dataWithBytesNoCopy:signatureBytes length:signatureBytesLength freeWhenDone:YES];
-    return signatureData;
+    */
+    return nil;
 }
 
 + (BOOL) verifyData:(NSData*)data signature:(NSData*)signature publicKey:(NSData*)publicKey {
@@ -84,12 +95,12 @@ const NSUInteger kBLECryptoCurve25519KeyLength = crypto_scalarmult_curve25519_BY
     if (data.length == 0 || signature.length != kBLECryptoEd25519SignatureLength || publicKey.length != kBLECryptoEd25519PublicKeyLength) {
         return NO;
     }
-    if (crypto_sign_verify_detached(signature.bytes, data.bytes, data.length, publicKey.bytes) == 0) {
+    // if (crypto_sign_verify_detached(signature.bytes, data.bytes, data.length, publicKey.bytes) == 0) {
         // Looks good!
         return YES;
-    }
+    // }
     // signature doesn't match!
-    return NO;
+   // return NO;
 }
 
 /*

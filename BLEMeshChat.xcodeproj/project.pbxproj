@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AFAD98C8D32B5D6E0EF9FA3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D875EBA6B1062FD39A2B28A /* libPods.a */; };
+		9BEC76F87BAB4C4FE484D6D7 /* libPods-BLEMeshChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAB7D86A85E488F44175221 /* libPods-BLEMeshChat.a */; };
 		D90CF5E519EC8D2E006222AB /* BLERemotePeer.m in Sources */ = {isa = PBXBuildFile; fileRef = D90CF5E419EC8D2E006222AB /* BLERemotePeer.m */; };
 		D90CF5E819EC8D3C006222AB /* BLEMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D90CF5E719EC8D3C006222AB /* BLEMessage.m */; };
 		D90CF5EB19EC8DD8006222AB /* BLEMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90CF5EA19EC8DD8006222AB /* BLEMessagesViewController.m */; };
@@ -46,8 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D1361F7F24E9C6CD2AF9A4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		6D875EBA6B1062FD39A2B28A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0A8FE7779BE5D45EE171B9 /* Pods-BLEMeshChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEMeshChat.release.xcconfig"; path = "Target Support Files/Pods-BLEMeshChat/Pods-BLEMeshChat.release.xcconfig"; sourceTree = "<group>"; };
+		3DAB7D86A85E488F44175221 /* libPods-BLEMeshChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEMeshChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		485A856CB76774B11AB67355 /* Pods-BLEMeshChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEMeshChat.debug.xcconfig"; path = "Target Support Files/Pods-BLEMeshChat/Pods-BLEMeshChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D90CF5E319EC8D2E006222AB /* BLERemotePeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLERemotePeer.h; sourceTree = "<group>"; };
 		D90CF5E419EC8D2E006222AB /* BLERemotePeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLERemotePeer.m; sourceTree = "<group>"; };
 		D90CF5E619EC8D3C006222AB /* BLEMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEMessage.h; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		D9F49A681A0EED030035B1C8 /* BLETransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLETransport.h; sourceTree = "<group>"; };
 		D9F49A691A0EED030035B1C8 /* BLETransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLETransport.m; sourceTree = "<group>"; };
 		D9F49A6B1A0EED450035B1C8 /* BLEDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDataStorage.h; sourceTree = "<group>"; };
-		E1441CDBDA6F311CDCBA029F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C4261319E8A617004F7335 /* CoreBluetooth.framework in Frameworks */,
-				5AFAD98C8D32B5D6E0EF9FA3 /* libPods.a in Frameworks */,
+				9BEC76F87BAB4C4FE484D6D7 /* libPods-BLEMeshChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,18 +128,18 @@
 			isa = PBXGroup;
 			children = (
 				D9C4261219E8A617004F7335 /* CoreBluetooth.framework */,
-				6D875EBA6B1062FD39A2B28A /* libPods.a */,
+				3DAB7D86A85E488F44175221 /* libPods-BLEMeshChat.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3D0ACF8749E6A76A6086D1C1 /* Pods */ = {
+		3C5816C9C0E3890D71BF8968 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D1361F7F24E9C6CD2AF9A4B /* Pods.debug.xcconfig */,
-				E1441CDBDA6F311CDCBA029F /* Pods.release.xcconfig */,
+				485A856CB76774B11AB67355 /* Pods-BLEMeshChat.debug.xcconfig */,
+				1B0A8FE7779BE5D45EE171B9 /* Pods-BLEMeshChat.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		D90CF5F019ECC0B2006222AB /* Messaging */ = {
@@ -217,8 +217,8 @@
 				D9C425E019E89D9D004F7335 /* BLEMeshChat */,
 				D9C425FA19E89D9D004F7335 /* BLEMeshChatTests */,
 				D9C425DF19E89D9D004F7335 /* Products */,
-				3D0ACF8749E6A76A6086D1C1 /* Pods */,
 				0702FD58DC78894CD193CF6B /* Frameworks */,
+				3C5816C9C0E3890D71BF8968 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,11 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9C4260119E89D9D004F7335 /* Build configuration list for PBXNativeTarget "BLEMeshChat" */;
 			buildPhases = (
-				67C04B84077C73E3DF903BFE /* Check Pods Manifest.lock */,
+				87E298D9885B3DF0B97885BD /* [CP] Check Pods Manifest.lock */,
 				D9C425DA19E89D9D004F7335 /* Sources */,
 				D9C425DB19E89D9D004F7335 /* Frameworks */,
 				D9C425DC19E89D9D004F7335 /* Resources */,
-				C6324647BEA53F552A63CA40 /* Copy Pods Resources */,
+				AFA259D2491CEE427E6FA3A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,7 +374,8 @@
 				TargetAttributes = {
 					D9C425DD19E89D9D004F7335 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 4T8JLQR6GR;
+						DevelopmentTeam = MTY83R62K2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -383,6 +384,7 @@
 					};
 					D9C425F619E89D9D004F7335 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = MTY83R62K2;
 						TestTargetID = D9C425DD19E89D9D004F7335;
 					};
 				};
@@ -427,34 +429,130 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67C04B84077C73E3DF903BFE /* Check Pods Manifest.lock */ = {
+		87E298D9885B3DF0B97885BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEMeshChat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6324647BEA53F552A63CA40 /* Copy Pods Resources */ = {
+		AFA259D2491CEE427E6FA3A5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BLEMeshChat/Pods-BLEMeshChat-resources.sh",
+				"${PODS_ROOT}/FormatterKit/Localizations/ca.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/cs.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/da.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/de.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/el.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/en.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/es.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/fr.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/id.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/it.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/ja.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/ko.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/nb.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/nl.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/nn.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/pl.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/pt.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/pt_BR.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/ru.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/sv.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/tr.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/uk.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/vi.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/zh-Hans.lproj",
+				"${PODS_ROOT}/FormatterKit/Localizations/zh-Hant.lproj",
+				"${PODS_CONFIGURATION_BUILD_DIR}/InAppSettingsKit/InAppSettingsKit.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/Base.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/de.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/en.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/es.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/fr.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/he.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/it.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/nl.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/pl.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/pt.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/ro.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/ru.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/tr.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/zh-Hans.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/Strings/zh-Hant.lproj",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ca.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cs.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/da.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/de.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/el.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/id.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ja.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nb.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nn.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt_BR.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sv.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/uk.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InAppSettingsKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesAssets.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Base.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/he.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ro.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesCollectionViewCellIncoming.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesCollectionViewCellOutgoing.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesLoadEarlierHeaderView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesToolbarContentView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesTypingIndicatorFooterView.nib",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BLEMeshChat/Pods-BLEMeshChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -597,29 +695,93 @@
 		};
 		D9C4260219E89D9D004F7335 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1361F7F24E9C6CD2AF9A4B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 485A856CB76774B11AB67355 /* Pods-BLEMeshChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ballinger (9P62QGET7G)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTY83R62K2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = BLEMeshChat/PrefixHeader.pch;
 				INFOPLIST_FILE = BLEMeshChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"/usr/lib/libc++.dylib",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FormatterKit\"",
+					"-l\"IGIdenticon\"",
+					"-l\"InAppSettingsKit\"",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"Mantle\"",
+					"-l\"PureLayout\"",
+					"-l\"YapDatabase\"",
+					"-l\"libsodium-ios\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		D9C4260319E89D9D004F7335 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1441CDBDA6F311CDCBA029F /* Pods.release.xcconfig */;
+			baseConfigurationReference = 1B0A8FE7779BE5D45EE171B9 /* Pods-BLEMeshChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Chris Ballinger (4T8JLQR6GR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTY83R62K2;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = BLEMeshChat/PrefixHeader.pch;
 				INFOPLIST_FILE = BLEMeshChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"/usr/lib/libc++.dylib",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FormatterKit\"",
+					"-l\"IGIdenticon\"",
+					"-l\"InAppSettingsKit\"",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"Mantle\"",
+					"-l\"PureLayout\"",
+					"-l\"YapDatabase\"",
+					"-l\"libsodium-ios\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -627,6 +789,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MTY83R62K2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -646,6 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MTY83R62K2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
